@@ -267,7 +267,6 @@ void task_actuator_statechart(void)
 
                 if (DEL_LED_XX_MIN < p_task_actuator_dta->tick)
                 {
-                    p_task_actuator_dta->state = ST_LED_XX_BLINK_ON;
                     p_task_actuator_dta->tick--;
                 }
             break;
@@ -308,7 +307,6 @@ void task_actuator_statechart(void)
 
                 if (DEL_LED_XX_MIN < p_task_actuator_dta->tick)
                 {
-                    p_task_actuator_dta->state = ST_LED_XX_BLINK_OFF;
                     p_task_actuator_dta->tick--;
                 }
             break;

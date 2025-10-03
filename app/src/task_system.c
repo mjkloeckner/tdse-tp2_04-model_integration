@@ -175,7 +175,6 @@ void task_system_statechart(void)
                     && (EV_SYS_LOOP_DET == p_task_system_dta->event))
             {
                 p_task_system_dta->flag = false;
-                put_event_task_actuator(EV_LED_XX_ON, ID_LED_A);
                 p_task_system_dta->state = ST_SYS_ACTIVE_01;
             }
 
